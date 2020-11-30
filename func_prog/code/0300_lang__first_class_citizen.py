@@ -12,12 +12,12 @@ def add(a, b):
     return a + b
 
 
-def collect(y, a, b):
-    return y(a, b)
+def collect(func, a, b):
+    return func(a, b)
 
 
 collect(add, 1, 2)
-"3"
+"> 3"
 
 collect(add, add(1, 2), add(4, 6))
 "13"
@@ -28,4 +28,4 @@ def sub(a, b):
 
 
 collect(add, add(sub(8, 2), sub(10, 9)), add(sub(10, add(5, 4)), 6))
-"14"
+"> 14"

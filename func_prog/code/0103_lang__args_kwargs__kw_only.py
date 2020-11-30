@@ -5,6 +5,13 @@ https://www.python.org/dev/peps/pep-3102
 Python 3.0+
 """
 
+def foo(name):
+    print(name)
+
+
+foo("Jarek")
+foo(name='Jarek')
+
 
 def name(positional_or_keyword_parameters, *, keyword_only_parameters):
     ...

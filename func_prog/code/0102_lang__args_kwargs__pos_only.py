@@ -8,13 +8,13 @@ Python 3.8+
 
 def name(
     positional_only_parameters,
-    # /,
+    /,
     positional_or_keyword_parameters,
 ):
     ...
 
 
-def position(x, y):  # , /):
+def position(x, y, /):
     print(f"Position ({x},{y})")
 
 

@@ -32,3 +32,4 @@ a, sign, b = string
 a, b = int(a), int(b)
 result = collect(map[sign], a, b)
 print(f"{string}={result}")
+
